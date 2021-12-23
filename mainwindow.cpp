@@ -98,10 +98,9 @@ void MainWindow::on_pushButton_2_clicked()
   {
       s+=c[n];
   }
-  s.c_str();
- // QString u=QString::fromStdString(s);
- // ui->plainTextEdit->setPlainText(u);
-
+ s.c_str();
+  QString u=QString::fromStdString(s);
+  ui->plainTextEdit->setPlainText(u);
 
 }
 
