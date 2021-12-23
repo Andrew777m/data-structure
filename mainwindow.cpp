@@ -65,18 +65,18 @@ void MainWindow::on_actionopen_triggered()
 
 void MainWindow::on_pushButton_clicked()
 {
-
-    string s,s2;
+detection.clear();
+    string s;
 
     s=Consistent(mytextstring);
+    QString t1=QString::fromStdString(detection);
 
 
 
-    QString t=QString::fromStdString(s);
+QMessageBox::warning(this,"Information" , "Detection : "+ t1 );
+     QString t=QString::fromStdString(s);
      ui->plainTextEdit->setPlainText(t);
 
-     QString u=QString::fromStdString(detection);
-     ui->plainTextEdit->setPlainText(u);
 
 
 
