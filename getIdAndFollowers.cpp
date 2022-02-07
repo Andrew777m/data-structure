@@ -1,3 +1,7 @@
+#include <string>
+#include <stack>
+#include <vector>
+#include "getIdAndFollowers.h"
 string getIdAndFollowers(string s)
 {
 	int counter=0;
